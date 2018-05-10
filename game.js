@@ -80,7 +80,7 @@ function updateGameState(game){
     var x = game.playerX;
     var y = game.playerY;
     if (game.grid[y][x] == 1) game.isDead = true;
-
+    
     // check if player hit coin
     if (hitCoin(game)){
         game.score += 100;
